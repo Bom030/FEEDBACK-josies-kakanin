@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Feedback Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f9e7c5] flex items-center justify-center min-h-screen">
+    <div class="relative w-96 bg-white p-6 rounded-lg shadow-lg text-center">
+        <!-- Logo -->
+        <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md">
+            <img src="https://drive.google.com/uc?export=view&id=1a0kvfS-jAt7d2oA4N5C0HYJbfihbFBrt" alt="Business Logo" class="w-20 h-20 object-contain">
+        </div>
+        
+        <!-- Decorative Banners -->
+        <div class="absolute -top-6 left-0 w-full flex justify-center">
+            <img src="https://drive.google.com/uc?export=view&id=1jPHGJZv3o1VocTk9vyYppQLw8GneRiju" alt="Decorative Banners" class="w-3/4">
+        </div>
+        
+        <h2 class="text-2xl font-bold mt-12 mb-4">Send Us Your Feedback</h2>
+        
+        <form action="https://formspree.io/f/xqaerjyj" method="POST" class="text-left">
+            <label class="block mb-2">Name (Optional):</label>
+            <input type="text" name="name" class="w-full p-2 border rounded mb-4">
+            
+            <label class="block mb-2">Email (Optional):</label>
+            <input type="email" name="email" class="w-full p-2 border rounded mb-4">
+            
+            <label class="block mb-2">Rating (Optional):</label>
+            <select name="rating" class="w-full p-2 border rounded mb-4">
+                <option value="">-- Select Rating --</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+            
+            <label class="block mb-2">Suggestions / Feedback:</label>
+            <textarea name="message" rows="4" required class="w-full p-2 border rounded mb-4"></textarea>
+            
+            <button type="submit" class="bg-blue-500 text-white w-full p-2 rounded hover:bg-blue-600">Submit Feedback</button>
+        </form>
+        
+        <!-- Patterned Base -->
+        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-40 h-10">
+            <img src="https://drive.google.com/uc?export=view&id=1pZgKoVs3vdlCM0ltFi8LSPPdqZQ5wzdx" alt="Pattern Base" class="w-full h-full">
+        </div>
+    </div>
+</body>
+</html>
